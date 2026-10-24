@@ -1,0 +1,2585 @@
+/* ==========================================================================
+   श्री राधा कृष्ण • DIVINE VRINDAVAN ANTI-GRAVITY SANCTUM
+   PURE HTML5 & CSS3 STYLING (NO JAVASCRIPT, NO FRAMEWORKS)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rozha+One&family=Yatra+One&display=swap');
+
+/* ==========================================================================
+   1. CSS CUSTOM PROPERTIES & SACRED THEME SYSTEM
+   ========================================================================== */
+:root {
+  /* Divine Fonts */
+  --font-serif: 'Cinzel Decorative', 'Rozha One', 'Georgia', serif;
+  --font-body: 'Marcellus', 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-devanagari: 'Yatra One', 'Rozha One', 'Marcellus', serif;
+
+  /* Sacred Cosmic Color Palette */
+  --bg-deep: #030614;
+  --bg-midnight: #060d26;
+  --bg-card: rgba(10, 18, 46, 0.75);
+  --bg-card-hover: rgba(16, 28, 70, 0.88);
+
+  /* Divine Glowing Light Accents */
+  --gold-primary: #ffd700;
+  --gold-light: #fef08a;
+  --gold-warm: #ffb703;
+  --gold-deep: #b45309;
+  --peacock-blue: #00b4d8;
+  --peacock-deep: #0077b6;
+  --lotus-pink: #f472b6;
+  --lotus-deep: #db2777;
+
+  /* Glassmorphism & Sacred Filigree Borders */
+  --glass-bg: rgba(6, 13, 36, 0.72);
+  --glass-border: rgba(255, 215, 0, 0.22);
+  --glass-border-hover: rgba(255, 215, 0, 0.55);
+  --glass-border-cyan: rgba(0, 180, 216, 0.4);
+
+  /* Divine Volumetric Glows */
+  --glow-gold: 0 0 25px rgba(255, 215, 0, 0.45);
+  --glow-gold-lg: 0 0 50px rgba(255, 215, 0, 0.6);
+  --glow-peacock: 0 0 25px rgba(0, 180, 216, 0.45);
+  --glow-lotus: 0 0 25px rgba(244, 114, 182, 0.4);
+
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-gold: #fde047;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  /* Transitions */
+  --trans-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --trans-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ==========================================================================
+   2. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+  background-color: var(--bg-deep);
+  color: var(--text-white);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+}
+
+body.celestial-body {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+  background-color: var(--bg-deep);
+  line-height: 1.65;
+  background-image: 
+    radial-gradient(circle at 50% 10%, rgba(0, 180, 216, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(244, 114, 182, 0.08) 0%, transparent 50%);
+}
+
+/* Hidden Interactive Controls */
+.darshan-radio,
+.darshan-checkbox {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -999;
+}
+
+/* Selection */
+::selection {
+  background: rgba(255, 215, 0, 0.35);
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--trans-smooth), text-shadow var(--trans-smooth);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   3. AMBIENT CELESTIAL ATMOSPHERE (STARS, NEBULA & SACRED GEOMETRY)
+   ========================================================================== */
+.divine-atmosphere {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  contain: strict;
+}
+
+.celestial-nebula {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.35;
+  will-change: transform, opacity;
+}
+
+.nebula-peacock {
+  top: -100px;
+  left: 15%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.4) 0%, rgba(3, 105, 161, 0.15) 60%, transparent 80%);
+  animation: divineAuraDrift1 24s ease-in-out infinite alternate;
+}
+
+.nebula-gold {
+  top: 30%;
+  right: -50px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, rgba(217, 119, 6, 0.15) 60%, transparent 80%);
+  animation: divineAuraDrift2 28s ease-in-out infinite alternate;
+}
+
+.nebula-lotus {
+  bottom: -150px;
+  left: 25%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.25) 0%, rgba(190, 24, 93, 0.1) 60%, transparent 80%);
+  animation: divineAuraDrift3 22s ease-in-out infinite alternate;
+}
+
+@keyframes divineAuraDrift1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(50px, 60px) scale(1.12); }
+}
+
+@keyframes divineAuraDrift2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-70px, -50px) scale(1.15); }
+}
+
+@keyframes divineAuraDrift3 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(60px, -40px) scale(1.08); }
+}
+
+.starfield-twinkle {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+    radial-gradient(2px 2px at 90px 140px, var(--gold-light), transparent),
+    radial-gradient(1px 1px at 150px 70px, #ffffff, transparent),
+    radial-gradient(2px 2px at 240px 320px, var(--peacock-blue), transparent),
+    radial-gradient(1.5px 1.5px at 380px 180px, #ffffff, transparent),
+    radial-gradient(2px 2px at 520px 390px, var(--gold-light), transparent),
+    radial-gradient(1.5px 1.5px at 700px 220px, #ffffff, transparent),
+    radial-gradient(2.5px 2.5px at 850px 480px, var(--gold-primary), transparent),
+    radial-gradient(1.5px 1.5px at 960px 110px, #ffffff, transparent),
+    radial-gradient(2px 2px at 1120px 310px, var(--lotus-pink), transparent);
+  background-size: 550px 550px;
+  opacity: 0.65;
+  animation: starTwinklePulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes starTwinklePulse {
+  0% { opacity: 0.45; }
+  100% { opacity: 0.85; }
+}
+
+.sacred-geometry-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at center, rgba(255, 215, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 215, 0, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 215, 0, 0.015) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: radial-gradient(ellipse at 50% 40%, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 40%, black 30%, transparent 80%);
+}
+
+/* ==========================================================================
+   4. TRANSPARENT GLASSMORPHIC TEMPLE HEADER
+   ========================================================================== */
+.temple-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  z-index: 1000;
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  transition: background var(--trans-smooth), border-color var(--trans-smooth);
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand Identity */
+.temple-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.om-glyph {
+  font-family: var(--font-devanagari);
+  font-size: 2rem;
+  color: var(--gold-primary);
+  text-shadow: 0 0 16px var(--gold-primary), 0 0 30px rgba(255, 215, 0, 0.5);
+  line-height: 1;
+  transition: transform var(--trans-spring);
+}
+
+.temple-brand:hover .om-glyph {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-main {
+  font-family: var(--font-devanagari);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  line-height: 1.2;
+}
+
+.brand-sub {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--peacock-blue);
+}
+
+/* Desktop Navigation Menu */
+.desktop-nav {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.4rem 0;
+  position: relative;
+  transition: color var(--trans-smooth);
+}
+
+.nav-symbol {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold-primary), var(--peacock-blue));
+  box-shadow: 0 0 8px var(--gold-primary);
+  transition: width var(--trans-smooth), left var(--trans-smooth);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gold-light);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-aarti-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid var(--glass-border);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  cursor: pointer;
+  transition: all var(--trans-smooth);
+}
+
+.btn-aarti-toggle:hover {
+  background: rgba(255, 215, 0, 0.18);
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.4);
+}
+
+/* Aarti Active State via :has() */
+body:has(#aarti-toggle:checked) .btn-aarti-toggle {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(245, 158, 11, 0.25));
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
+  color: #ffffff;
+}
+
+.btn-darshan-cta {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.52rem 1.35rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+  border: 1px solid rgba(255, 235, 150, 0.4);
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45), 0 0 8px rgba(255, 215, 0, 0.4);
+  transition: transform var(--trans-spring), box-shadow var(--trans-smooth);
+}
+
+.btn-darshan-cta:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 26px rgba(245, 158, 11, 0.65), 0 0 18px var(--gold-primary);
+}
+
+.cta-shimmer {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 65%
+  );
+  transform: rotate(25deg) translateY(-120%);
+  animation: ctaShimmerAnim 3.8s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes ctaShimmerAnim {
+  0% { transform: rotate(25deg) translateY(-120%); }
+  35%, 100% { transform: rotate(25deg) translateY(120%); }
+}
+
+/* Mobile Hamburger */
+.hamburger-trigger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.h-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--gold-primary);
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+  transition: transform var(--trans-smooth), opacity var(--trans-smooth);
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: visibility 0.4s, opacity 0.4s;
+}
+
+.drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 6, 20, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 86%;
+  max-width: 360px;
+  background: linear-gradient(180deg, rgba(8, 16, 44, 0.98) 0%, rgba(4, 8, 24, 0.98) 100%);
+  border-left: 1px solid var(--glass-border);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 215, 0, 0.15);
+}
+
+.drawer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.drawer-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-devanagari);
+  font-size: 1.15rem;
+  color: var(--gold-light);
+}
+
+.drawer-om {
+  font-size: 1.4rem;
+  color: var(--gold-primary);
+}
+
+.drawer-close {
+  font-size: 1.8rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin: 1.75rem 0;
+}
+
+.drawer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color var(--trans-smooth), transform var(--trans-smooth);
+}
+
+.drawer-link:hover {
+  color: var(--gold-light);
+  transform: translateX(6px);
+}
+
+.d-icon {
+  font-size: 1rem;
+}
+
+.drawer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mahamantra-pill {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-devanagari);
+  font-size: 0.75rem;
+  color: var(--gold-primary);
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid var(--glass-border);
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  line-height: 1.4;
+}
+
+.drawer-blessing {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Mobile Toggle Behavior (Pure CSS) */
+#nav-toggle:checked ~ .temple-header .mobile-drawer {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#nav-toggle:checked ~ .temple-header .drawer-panel {
+  transform: translateX(0);
+}
+
+#nav-toggle:checked ~ .temple-header .hamburger-trigger .bar-top {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#nav-toggle:checked ~ .temple-header .hamburger-trigger .bar-mid {
+  opacity: 0;
+}
+
+#nav-toggle:checked ~ .temple-header .hamburger-trigger .bar-bot {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   5. HERO SECTION: 3D ANTI-GRAVITY FLOATING RADHA KRISHNA DARSHAN
+   ========================================================================== */
+.hero-sanctum {
+  position: relative;
+  min-height: auto;
+  padding: 3rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  overflow-x: clip;
+  contain: paint;
+  max-width: 100vw;
+  width: 100%;
+  z-index: 10;
+}
+
+.sanctum-header {
+  max-width: 860px;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  z-index: 20;
+}
+
+/* Sacred Invocation Pill */
+.sacred-invocation-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1.25rem;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  font-family: var(--font-devanagari);
+  font-size: 0.92rem;
+  color: var(--gold-light);
+  margin-bottom: 1.25rem;
+}
+
+.invocation-sparkle {
+  color: var(--gold-primary);
+  text-shadow: 0 0 8px var(--gold-primary);
+}
+
+/* Grand Headlines */
+.sanctum-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.headline-sanskrit {
+  font-family: var(--font-devanagari);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5), 0 0 60px rgba(0, 180, 216, 0.4);
+}
+
+.headline-english {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4.5vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.golden-gradient-text {
+  background: linear-gradient(135deg, #ffffff 15%, var(--gold-primary) 55%, #f59e0b 85%, var(--peacock-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.45));
+}
+
+.sanctum-subtext {
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   DARSHAN INTERACTIVE SELECTOR BAR (Pure CSS Leela Modes)
+   ========================================================================== */
+.darshan-selector-bar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  background: rgba(10, 20, 52, 0.75);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.selector-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold-light);
+}
+
+.darshan-options {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(4, 9, 24, 0.7);
+  padding: 0.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.darshan-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all var(--trans-smooth);
+}
+
+.darshan-btn:hover {
+  color: #ffffff;
+}
+
+/* Active Darshan Button Highlight via :has() */
+body:has(#mode-nitya:checked) .btn-nitya,
+body:has(#mode-jugal:checked) .btn-jugal,
+body:has(#mode-bansuri:checked) .btn-bansuri,
+body:has(#mode-temple:checked) .btn-temple {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.28), rgba(245, 158, 11, 0.35));
+  border: 1px solid var(--gold-primary);
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.5);
+}
+
+/* ==========================================================================
+   6. 3D FLOATING SANCTUM SHRINE (ANTI-GRAVITY RIG)
+   ========================================================================== */
+.floating-stage-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto 3.5rem;
+  z-index: 15;
+}
+
+/* Divine Particle Field (Upward Drifting Stardust) */
+.divine-particle-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.spark {
+  position: absolute;
+  bottom: 80px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  box-shadow: 0 0 8px var(--gold-primary);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.s-1  { left: 45%; width: 4px; height: 4px; animation: sparkFloat 3.8s infinite ease-out 0.2s; }
+.s-2  { left: 53%; width: 3px; height: 3px; animation: sparkFloat 4.2s infinite ease-out 0.9s; }
+.s-3  { left: 38%; width: 5px; height: 5px; animation: sparkFloat 3.5s infinite ease-out 1.5s; }
+.s-4  { left: 60%; width: 2px; height: 2px; animation: sparkFloat 4.8s infinite ease-out 0.6s; }
+.s-5  { left: 48%; width: 4px; height: 4px; animation: sparkFloat 3.9s infinite ease-out 2.1s; }
+.s-6  { left: 55%; width: 3px; height: 3px; animation: sparkFloat 4.5s infinite ease-out 1.2s; }
+.s-7  { left: 34%; width: 4px; height: 4px; animation: sparkFloat 3.6s infinite ease-out 2.4s; }
+.s-8  { left: 66%; width: 3px; height: 3px; animation: sparkFloat 4.6s infinite ease-out 1.8s; }
+.s-9  { left: 42%; width: 5px; height: 5px; animation: sparkFloat 3.7s infinite ease-out 0.4s; }
+.s-10 { left: 58%; width: 2px; height: 2px; animation: sparkFloat 4.4s infinite ease-out 2.8s; }
+.s-11 { left: 47%; width: 3px; height: 3px; animation: sparkFloat 4.1s infinite ease-out 1.6s; }
+.s-12 { left: 51%; width: 4px; height: 4px; animation: sparkFloat 3.4s infinite ease-out 2.3s; }
+
+@keyframes sparkFloat {
+  0% { transform: translateY(0) scale(0.6); opacity: 0; }
+  25% { opacity: 0.9; }
+  75% { opacity: 0.8; }
+  100% { transform: translateY(-440px) scale(1.4) rotate(180deg); opacity: 0; }
+}
+
+/* Levitating Celestial Badges */
+.celestial-hud {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 25;
+  pointer-events: none;
+}
+
+.hud-left { left: 2%; }
+.hud-right { right: 2%; }
+
+.hud-divine-card {
+  width: 185px;
+  padding: 1rem 1.15rem;
+  text-align: left;
+  animation: hudBob 6s ease-in-out infinite alternate;
+}
+
+.hud-left .hud-divine-card:nth-child(1) { animation-delay: 0s; }
+.hud-left .hud-divine-card:nth-child(2) { animation-delay: 1.8s; }
+.hud-right .hud-divine-card:nth-child(1) { animation-delay: 0.9s; }
+.hud-right .hud-divine-card:nth-child(2) { animation-delay: 2.5s; }
+
+@keyframes hudBob {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.hud-top {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.3rem;
+}
+
+.hud-title {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold-light);
+}
+
+.hud-val {
+  font-family: var(--font-devanagari);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.hud-desc {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.hud-gold-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 0.5rem;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.gold-fill-1, .gold-fill-2 {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-primary), var(--peacock-blue));
+  box-shadow: 0 0 8px var(--gold-primary);
+  animation: goldBarPulse 3s infinite alternate ease-in-out;
+}
+
+.gold-fill-1 { width: 92%; }
+.gold-fill-2 { width: 85%; }
+
+@keyframes goldBarPulse {
+  0% { transform: scaleX(0.85); transform-origin: left; }
+  100% { transform: scaleX(1); transform-origin: left; }
+}
+
+/* ==========================================================================
+   3D PERSPECTIVE RIG & LEVITATING SHRINE
+   ========================================================================== */
+.sanctum-perspective-rig {
+  position: relative;
+  width: 480px;
+  height: 580px;
+  perspective: 1400px;
+  perspective-origin: 50% 45%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The Levitation Shell (Handles 3D undulating oscillation) */
+.sanctum-levitation-shell {
+  position: relative;
+  width: 440px;
+  height: 540px;
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation: divineFloat3D 7s ease-in-out infinite;
+}
+
+@keyframes divineFloat3D {
+  0%, 100% {
+    transform: translateY(0px) rotateX(7deg) rotateY(-8deg) rotateZ(-1deg);
+  }
+  50% {
+    transform: translateY(-32px) rotateX(3deg) rotateY(6deg) rotateZ(1deg);
+  }
+}
+
+/* Centerpiece 3D Shrine Structure */
+.centerpiece-3d-shrine {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+/* Golden Mandir Arch Frame (Jharokha) */
+.mandir-golden-frame {
+  position: absolute;
+  inset: 0;
+  border-radius: 36px;
+  padding: 12px;
+  background: linear-gradient(145deg, #161e38 0%, #0c1224 50%, #1a223e 100%);
+  border: 3px solid var(--gold-primary);
+  box-shadow: 
+    0 0 0 2px rgba(255, 235, 150, 0.5),
+    0 25px 60px rgba(0, 0, 0, 0.9),
+    0 0 50px rgba(255, 215, 0, 0.35),
+    inset 0 0 20px rgba(255, 215, 0, 0.2);
+  transform: translateZ(15px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Shikhara Crest (Temple Dome Pinnacle) */
+.shikhara-crest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.3) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+.kalash-pinnacle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, var(--gold-primary) 60%, #b45309 100%);
+  box-shadow: 0 0 14px var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin-top: -8px;
+}
+
+/* Golden Pillars */
+.jharokha-pillar {
+  position: absolute;
+  top: 24px;
+  bottom: 30px;
+  width: 10px;
+  background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold-primary) 50%, #b45309 100%);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  z-index: 25;
+}
+
+.pillar-left { left: 8px; border-radius: 4px 0 0 4px; }
+.pillar-right { right: 8px; border-radius: 0 4px 4px 0; }
+
+/* Divine Portrait Viewport */
+.divine-portrait-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #000000;
+}
+
+/* Multi-Leela Layering (Controlled by Pure CSS Radios) */
+.divine-artwork-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, transform 0.8s ease, visibility 0.8s;
+  transform: scale(1.05);
+}
+
+.darshan-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.artwork-divine-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 40%, transparent 40%, rgba(3, 6, 20, 0.6) 80%, rgba(3, 6, 20, 0.95) 100%);
+  pointer-events: none;
+}
+
+/* Pure CSS Darshan Layer Activation Rules */
+body:has(#mode-nitya:checked) .layer-nitya,
+body:has(#mode-jugal:checked) .layer-jugal,
+body:has(#mode-bansuri:checked) .layer-bansuri,
+body:has(#mode-temple:checked) .layer-temple {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* Sacred Glass Specular Reflection */
+.sacred-glass-sheen {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 180%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 215, 0, 0.12) 30%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 20;
+}
+
+.divine-halo-radial {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.35) 0%, rgba(0, 180, 216, 0.2) 50%, transparent 75%);
+  filter: blur(25px);
+  pointer-events: none;
+  z-index: 10;
+  animation: haloPulse 4s infinite alternate ease-in-out;
+}
+
+@keyframes haloPulse {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+}
+
+/* Shrine Inscription Base Plate */
+.shrine-base-plate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.55rem;
+  background: linear-gradient(180deg, rgba(8, 14, 38, 0.85) 0%, rgba(3, 6, 18, 0.95) 100%);
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+  z-index: 25;
+}
+
+.base-mantra {
+  font-family: var(--font-devanagari);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 10px var(--gold-primary);
+}
+
+/* ==========================================================================
+   FLOATING 3D SATELLITE OBJECTS (Anti-Gravity Lotuses, Diyas, Feathers)
+   ========================================================================== */
+/* Floating 3D Lotuses */
+.floating-lotus-3d {
+  position: absolute;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  z-index: 35;
+}
+
+.lotus-1 {
+  bottom: -20px;
+  left: -25px;
+  transform: translateZ(45px);
+  animation: lotusHover1 5s ease-in-out infinite alternate;
+}
+
+.lotus-2 {
+  bottom: 40px;
+  right: -30px;
+  transform: translateZ(55px);
+  animation: lotusHover2 6s ease-in-out infinite alternate;
+}
+
+.lotus-3 {
+  top: 40px;
+  left: -35px;
+  transform: translateZ(35px);
+  animation: lotusHover3 7s ease-in-out infinite alternate;
+}
+
+@keyframes lotusHover1 {
+  0% { transform: translateZ(45px) translateY(0) rotate(0deg); }
+  100% { transform: translateZ(45px) translateY(-18px) rotate(8deg); }
+}
+
+@keyframes lotusHover2 {
+  0% { transform: translateZ(55px) translateY(0) rotate(0deg); }
+  100% { transform: translateZ(55px) translateY(-22px) rotate(-10deg); }
+}
+
+@keyframes lotusHover3 {
+  0% { transform: translateZ(35px) translateY(0) scale(0.9); }
+  100% { transform: translateZ(35px) translateY(-15px) scale(1.05); }
+}
+
+.lotus-petals-cluster {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.petal-center {
+  font-size: 2.8rem;
+  filter: drop-shadow(0 0 12px var(--lotus-pink)) drop-shadow(0 0 24px rgba(255, 215, 0, 0.4));
+}
+
+.lotus-glow-core {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.6) 0%, transparent 70%);
+  filter: blur(8px);
+}
+
+/* Floating Golden Diyas */
+.floating-diya-3d {
+  position: absolute;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  z-index: 35;
+}
+
+.diya-left {
+  top: 35%;
+  left: -40px;
+  transform: translateZ(40px);
+  animation: diyaFloatLeft 6.5s ease-in-out infinite alternate;
+}
+
+.diya-right {
+  top: 35%;
+  right: -40px;
+  transform: translateZ(40px);
+  animation: diyaFloatRight 6.5s ease-in-out infinite alternate 1s;
+}
+
+@keyframes diyaFloatLeft {
+  0% { transform: translateZ(40px) translateY(0); }
+  100% { transform: translateZ(40px) translateY(-20px); }
+}
+
+@keyframes diyaFloatRight {
+  0% { transform: translateZ(40px) translateY(0); }
+  100% { transform: translateZ(40px) translateY(-20px); }
+}
+
+.diya-clay-base {
+  width: 32px;
+  height: 12px;
+  border-radius: 0 0 16px 16px;
+  background: linear-gradient(180deg, #d97706 0%, #78350f 100%);
+  border: 1px solid var(--gold-primary);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.sacred-flame {
+  position: relative;
+  width: 14px;
+  height: 22px;
+  margin: -14px auto 0;
+  border-radius: 50% 50% 20% 20%;
+  background: radial-gradient(ellipse at bottom, #fff 0%, #ffb703 40%, #ea580c 80%, transparent 100%);
+  box-shadow: 0 0 14px #ffb703, 0 0 28px rgba(255, 183, 3, 0.8);
+  animation: flameFlicker 1.8s infinite ease-in-out;
+}
+
+@keyframes flameFlicker {
+  0%, 100% { transform: scale(1) rotate(-1deg); }
+  50% { transform: scale(1.12, 1.25) rotate(2deg); }
+}
+
+/* Aarti Glow Amplification via Checkbox */
+body:has(#aarti-toggle:checked) .sacred-flame {
+  box-shadow: 0 0 25px #ffb703, 0 0 50px rgba(255, 215, 0, 0.9), 0 0 80px rgba(255, 183, 3, 0.5);
+}
+
+.diya-light-beam {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 120px;
+  background: radial-gradient(ellipse at top, rgba(255, 183, 3, 0.3) 0%, transparent 70%);
+  filter: blur(10px);
+  opacity: 0.7;
+}
+
+/* Floating Peacock Feather Drift */
+.floating-peacock-feather {
+  position: absolute;
+  top: 15%;
+  right: -55px;
+  width: 50px;
+  height: 90px;
+  transform: translateZ(50px) rotate(18deg);
+  pointer-events: none;
+  z-index: 35;
+  animation: featherSway 7s ease-in-out infinite alternate;
+}
+
+@keyframes featherSway {
+  0% { transform: translateZ(50px) translateY(0) rotate(18deg); }
+  100% { transform: translateZ(50px) translateY(-24px) rotate(28deg); }
+}
+
+.feather-eye {
+  position: relative;
+  width: 38px;
+  height: 52px;
+  border-radius: 50% 50% 45% 45%;
+  background: radial-gradient(ellipse at center, var(--gold-primary) 0%, #15803d 50%, var(--peacock-deep) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 16px var(--peacock-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-core-purple {
+  width: 14px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #7e22ce 0%, #1e1b4b 100%);
+  box-shadow: 0 0 8px #7e22ce;
+}
+
+/* ==========================================================================
+   SACRED BASE EMITTER (ANTI-GRAVITY CONCENTRIC MANDALAS & SHADOW)
+   ========================================================================== */
+.sacred-base-emitter {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 250px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.divine-light-pillar {
+  position: absolute;
+  bottom: 50px;
+  width: 360px;
+  height: 440px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 215, 0, 0.3) 0%,
+    rgba(0, 180, 216, 0.18) 45%,
+    transparent 85%
+  );
+  clip-path: polygon(25% 0%, 75% 0%, 95% 100%, 5% 100%);
+  filter: blur(20px);
+  opacity: 0.65;
+  animation: pillarGlow 4s infinite alternate ease-in-out;
+}
+
+@keyframes pillarGlow {
+  0% { opacity: 0.45; transform: scaleX(0.95); }
+  100% { opacity: 0.85; transform: scaleX(1.05); }
+}
+
+.divine-shadow-pool {
+  position: absolute;
+  bottom: 35px;
+  width: 260px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.95) 0%, rgba(2, 6, 20, 0.6) 55%, transparent 80%);
+  filter: blur(16px);
+  animation: shadowBreatheDivine 7s ease-in-out infinite;
+}
+
+@keyframes shadowBreatheDivine {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(0.72); opacity: 0.5; }
+}
+
+/* Concentric Tilted Mandalas (75deg) */
+.sacred-mandala {
+  position: absolute;
+  bottom: 30px;
+  border-radius: 50%;
+  transform: rotateX(75deg);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.mandala-outer {
+  width: 520px;
+  height: 520px;
+  border: 1px dashed rgba(255, 215, 0, 0.45);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.3);
+  animation: mandalaSpinClock 30s linear infinite;
+}
+
+.mandala-mid {
+  width: 380px;
+  height: 380px;
+  border: 2px solid rgba(0, 180, 216, 0.5);
+  box-shadow: 0 0 35px var(--glow-peacock);
+  animation: mandalaSpinCounter 20s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mandala-inner {
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgba(255, 215, 0, 0.85);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+  animation: mandalaSpinClock 12s linear infinite;
+}
+
+@keyframes mandalaSpinClock {
+  0% { transform: rotateX(75deg) rotate(0deg); }
+  100% { transform: rotateX(75deg) rotate(360deg); }
+}
+
+@keyframes mandalaSpinCounter {
+  0% { transform: rotateX(75deg) rotate(360deg); }
+  100% { transform: rotateX(75deg) rotate(0deg); }
+}
+
+.mandala-om-glyphs {
+  position: absolute;
+  inset: 0;
+}
+
+.om-point {
+  position: absolute;
+  font-family: var(--font-devanagari);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  text-shadow: 0 0 8px var(--gold-primary);
+}
+
+.pt-1 { top: 6px; left: 50%; transform: translateX(-50%); }
+.pt-2 { right: 8px; top: 50%; transform: translateY(-50%); }
+.pt-3 { bottom: 6px; left: 50%; transform: translateX(-50%); }
+.pt-4 { left: 8px; top: 50%; transform: translateY(-50%); }
+
+.celestial-core-light {
+  position: absolute;
+  bottom: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, var(--gold-primary) 35%, transparent 75%);
+  filter: blur(18px);
+  opacity: 0.85;
+  animation: coreGlowDivine 3.5s infinite alternate ease-in-out;
+}
+
+@keyframes coreGlowDivine {
+  0% { transform: scale(0.9); opacity: 0.65; }
+  100% { transform: scale(1.18); opacity: 1; }
+}
+
+/* ==========================================================================
+   SACRED GLORIES METRIC STRIP
+   ========================================================================== */
+.sacred-virtues-strip {
+  width: 100%;
+  max-width: 1120px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  z-index: 20;
+}
+
+/* Glass Card Global Class */
+.glass-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 24px;
+  padding: 1.75rem 1.4rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+  transition: transform var(--trans-smooth), border-color var(--trans-smooth), box-shadow var(--trans-smooth);
+  overflow: hidden;
+}
+
+.glass-card:hover {
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.35);
+  transform: translateY(-4px);
+}
+
+.virtue-card {
+  text-align: left;
+}
+
+.virtue-symbol {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.virtue-num {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 0.3rem;
+}
+
+.virtue-unit {
+  font-size: 1.1rem;
+  color: var(--gold-primary);
+}
+
+.virtue-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 0.25rem;
+}
+
+.virtue-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   7. SECTION 2: VRINDAVAN LEELA - THE SACRED BENTO GRID
+   ========================================================================== */
+.leela-section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.section-title-wrap {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3.5rem;
+}
+
+.divine-tag {
+  display: inline-block;
+  font-family: var(--font-devanagari);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold-primary);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 12px var(--gold-primary);
+}
+
+.section-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+.section-caption {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Bento Grid */
+.leela-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .leela-bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bento-wide {
+    grid-column: span 2;
+  }
+}
+
+.bento-card {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.card-desc {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.bento-quote {
+  border-top: 1px solid var(--glass-border);
+  padding-top: 0.85rem;
+  font-size: 0.88rem;
+  color: var(--gold-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.quote-ref {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Bento Visuals */
+.bento-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.mini-bansuri-icon {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 16px var(--gold-primary));
+  animation: bansuriBob 4s infinite ease-in-out alternate;
+}
+
+@keyframes bansuriBob {
+  0% { transform: translateY(0) rotate(-5deg); }
+  100% { transform: translateY(-12px) rotate(5deg); }
+}
+
+.golden-lotus-symbol {
+  font-size: 3.2rem;
+  filter: drop-shadow(0 0 20px var(--lotus-pink));
+  animation: lotusBreathe 3s infinite ease-in-out alternate;
+}
+
+@keyframes lotusBreathe {
+  0% { transform: scale(0.92); }
+  100% { transform: scale(1.1); }
+}
+
+.radha-mantra-badge {
+  font-family: var(--font-devanagari);
+  font-size: 1.1rem;
+  color: var(--gold-primary);
+  margin-left: 0.75rem;
+  border: 1px solid var(--gold-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.08);
+}
+
+.feather-glow-art {
+  font-size: 3.5rem;
+  filter: drop-shadow(0 0 20px var(--peacock-blue));
+  animation: featherSway2 4s infinite ease-in-out alternate;
+}
+
+@keyframes featherSway2 {
+  0% { transform: rotate(-8deg); }
+  100% { transform: rotate(12deg); }
+}
+
+.ghat-pilgrim-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.ghat-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid var(--glass-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+/* ==========================================================================
+   8. SECTION 3: ANTI-GRAVITY BANSURI SHOWCASE
+   ========================================================================== */
+.bansuri-section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.bansuri-feature-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .bansuri-feature-card {
+    grid-template-columns: 1fr 1fr;
+    padding: 3.5rem;
+  }
+}
+
+.bansuri-feature-visual {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 215, 0, 0.25);
+  border: 2px solid var(--glass-border);
+}
+
+.bansuri-feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.bansuri-feature-card:hover .bansuri-feature-img {
+  transform: scale(1.05);
+}
+
+.bansuri-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0.75rem 0 1rem;
+  line-height: 1.25;
+}
+
+.bansuri-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.bansuri-notes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.note-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 0.85rem 1.15rem;
+}
+
+.note-sanskrit {
+  font-family: var(--font-devanagari);
+  font-size: 0.85rem;
+  color: var(--gold-primary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.note-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+
+.note-meaning {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.bansuri-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bansuri-melody-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.melody-bar {
+  width: 3px;
+  height: 16px;
+  background: var(--gold-primary);
+  border-radius: 2px;
+  animation: melodyPulse 1.2s infinite ease-in-out;
+}
+
+.melody-bar:nth-child(2) { animation-delay: 0.2s; height: 24px; }
+.melody-bar:nth-child(3) { animation-delay: 0.4s; height: 18px; }
+.melody-bar:nth-child(4) { animation-delay: 0.6s; height: 10px; }
+
+@keyframes melodyPulse {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1.2); }
+}
+
+.melody-text {
+  font-size: 0.78rem;
+  color: var(--gold-light);
+  margin-left: 0.5rem;
+}
+
+/* ==========================================================================
+   9. SECTION 4: SACRED DEVOTIONAL QUOTES & SHLOKAS
+   ========================================================================== */
+.shlokas-section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.shlokas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .shlokas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .shlokas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.shloka-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-color: rgba(255, 215, 0, 0.2);
+}
+
+.featured-shloka {
+  border-color: var(--gold-primary);
+  background: linear-gradient(145deg, rgba(16, 28, 70, 0.85) 0%, rgba(8, 14, 38, 0.85) 100%);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 215, 0, 0.35);
+}
+
+.shloka-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-primary), #f59e0b);
+  color: #030614;
+}
+
+.shloka-ornament {
+  font-family: var(--font-devanagari);
+  font-size: 2rem;
+  color: var(--gold-primary);
+  line-height: 1;
+  margin-bottom: 0.85rem;
+  text-shadow: 0 0 12px var(--gold-primary);
+}
+
+.shloka-sanskrit {
+  font-family: var(--font-devanagari);
+  font-size: 1.12rem;
+  color: var(--gold-light);
+  line-height: 1.6;
+  margin-bottom: 1.15rem;
+  font-weight: 500;
+}
+
+.shloka-translation {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.shloka-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 1rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.shloka-source {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--gold-primary);
+}
+
+/* ==========================================================================
+   10. SECTION 5: SACRED VRINDAVAN DHAM GALLERY
+   ========================================================================== */
+.gallery-section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.gallery-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .gallery-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.shrine-gallery-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-img-box {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.g-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shrine-gallery-card:hover .g-img {
+  transform: scale(1.08);
+}
+
+.gallery-sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(3, 6, 20, 0.9) 100%);
+}
+
+.gallery-location-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(3, 6, 20, 0.85);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+}
+
+.gallery-card-info {
+  padding: 1.75rem;
+}
+
+.g-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.g-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   11. SECTION 6: SACRED ASHTAKAM & PRAYERS (PURE CSS ACCORDION)
+   ========================================================================== */
+.prayers-section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.prayers-container {
+  max-width: 880px;
+}
+
+.prayers-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.prayer-item {
+  padding: 0;
+  cursor: pointer;
+}
+
+.prayer-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1.75rem;
+  list-style: none;
+  user-select: none;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color var(--trans-smooth);
+}
+
+.prayer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.prayer-icon {
+  font-size: 1.3rem;
+}
+
+.prayer-toggle-glyph {
+  font-family: var(--font-sans);
+  font-size: 1.6rem;
+  color: var(--gold-primary);
+  line-height: 1;
+  transition: transform var(--trans-smooth);
+}
+
+.prayer-item[open] .prayer-toggle-glyph {
+  transform: rotate(45deg);
+}
+
+.prayer-item[open] .prayer-summary {
+  color: var(--gold-light);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.prayer-content {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.verse-stanza {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sanskrit-verse {
+  font-family: var(--font-devanagari);
+  font-size: 1.15rem;
+  color: var(--gold-light);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.verse-meaning {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.mahamantra-chant-box {
+  background: rgba(255, 215, 0, 0.06);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.mantra-line-sanskrit {
+  font-family: var(--font-devanagari);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  text-shadow: 0 0 12px var(--gold-primary);
+  margin-bottom: 0.35rem;
+}
+
+.mantra-insight {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* ==========================================================================
+   12. SECTION 7: VIRTUAL PUSHPA SEVA & OFFERINGS
+   ========================================================================== */
+.offerings-section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.offerings-sanctum-card {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(14, 24, 60, 0.88) 0%, rgba(6, 12, 32, 0.92) 100%);
+  border: 2px solid var(--glass-border);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 50px rgba(255, 215, 0, 0.25);
+}
+
+.offerings-aura {
+  position: absolute;
+  top: -50%;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.offerings-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.85rem 0 1rem;
+  text-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.offerings-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.65;
+}
+
+.offering-interactive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.offering-item {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.item-emoji {
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
+  filter: drop-shadow(0 0 10px var(--gold-primary));
+}
+
+.item-name {
+  font-family: var(--font-devanagari);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.item-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 0.85rem;
+}
+
+.item-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--peacock-blue);
+  background: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.gold-badge {
+  color: var(--gold-light);
+  background: rgba(255, 215, 0, 0.12);
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.active-offering {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.sacred-pledge-card {
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pledge-om {
+  font-family: var(--font-devanagari);
+  font-size: 2.8rem;
+  color: var(--gold-primary);
+  text-shadow: 0 0 15px var(--gold-primary);
+}
+
+.pledge-text {
+  text-align: left;
+}
+
+.pledge-text em {
+  font-family: var(--font-devanagari);
+  font-size: 1.15rem;
+  color: var(--gold-light);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.pledge-sub {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.btn-lg {
+  padding: 1.1rem 2.6rem;
+  font-size: 1rem;
+}
+
+.btn-arrow {
+  font-size: 1.1rem;
+  margin-left: 0.4rem;
+}
+
+/* ==========================================================================
+   13. MAGNIFICENT VEDIC TEMPLE FOOTER
+   ========================================================================== */
+.temple-footer {
+  background: #02040b;
+  border-top: 1px solid var(--glass-border);
+  position: relative;
+  z-index: 10;
+}
+
+/* Holy Calligraphy Marquee Strip */
+.sacred-marquee-strip {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 0.75rem 0;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  font-family: var(--font-devanagari);
+  font-size: 1rem;
+  color: var(--gold-light);
+  text-shadow: 0 0 10px var(--gold-primary);
+  animation: marqueeScroll 35s linear infinite;
+}
+
+.marquee-content span {
+  margin: 0 2rem;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.f-om {
+  font-family: var(--font-devanagari);
+  font-size: 1.8rem;
+  color: var(--gold-primary);
+}
+
+.f-name {
+  font-family: var(--font-devanagari);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.f-desc {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.f-social-symbols {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.f-sym {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid var(--glass-border);
+  font-size: 1.1rem;
+  color: var(--gold-primary);
+  cursor: pointer;
+  transition: transform var(--trans-smooth), background var(--trans-smooth);
+}
+
+.f-sym:hover {
+  transform: translateY(-3px) scale(1.1);
+  background: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 12px var(--gold-primary);
+}
+
+.col-heading {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.col-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.col-list a {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.col-list a:hover {
+  color: var(--gold-light);
+  text-shadow: 0 0 8px var(--gold-primary);
+}
+
+.timings-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.timings-list strong {
+  font-family: var(--font-sans);
+  color: var(--gold-light);
+}
+
+.footer-gold-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+  margin: 2.5rem 0;
+}
+
+.footer-bottom-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom-row {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer-dedication strong {
+  color: var(--gold-light);
+}
+
+.footer-pilgrim-loc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  color: var(--peacock-blue);
+}
+
+/* ==========================================================================
+   14. RESPONSIVE BREAKPOINTS (MOBILE-FIRST POLISH)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .hamburger-trigger {
+    display: none;
+  }
+
+  .celestial-hud {
+    display: flex;
+  }
+}
+
+@media (max-width: 1023px) {
+  .celestial-hud {
+    display: none;
+  }
+
+  .sanctum-perspective-rig {
+    width: 380px;
+    height: 480px;
+  }
+
+  .sanctum-levitation-shell {
+    width: 360px;
+    height: 460px;
+  }
+
+  .sacred-base-emitter {
+    width: 440px;
+  }
+
+  .mandala-outer {
+    width: 380px;
+    height: 380px;
+  }
+
+  .mandala-mid {
+    width: 280px;
+    height: 280px;
+  }
+
+  .mandala-inner {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-container {
+    padding: 0.65rem 1rem;
+  }
+
+  .brand-sub {
+    display: none;
+  }
+
+  .btn-aarti-toggle {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.72rem;
+  }
+
+  .btn-darshan-cta {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-sanctum {
+    padding: 2rem 0.85rem 3.5rem;
+  }
+
+  .darshan-selector-bar {
+    border-radius: 20px;
+    gap: 0.6rem;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .darshan-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 0.3rem;
+  }
+
+  .darshan-btn {
+    justify-content: center;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.72rem;
+  }
+
+  .sanctum-perspective-rig {
+    width: 290px;
+    height: 380px;
+  }
+
+  .sanctum-levitation-shell {
+    width: 280px;
+    height: 360px;
+  }
+
+  .floating-stage-viewport {
+    min-height: 440px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+  .sacred-base-emitter {
+    width: 300px;
+    height: 140px;
+  }
+
+  .mandala-outer {
+    width: 260px;
+    height: 260px;
+  }
+
+  .mandala-mid {
+    width: 190px;
+    height: 190px;
+  }
+
+  .mandala-inner {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sacred-virtues-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .virtue-card {
+    padding: 1.15rem 0.85rem;
+  }
+
+  .virtue-num {
+    font-size: 1.45rem;
+  }
+
+  .bansuri-feature-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .sacred-pledge-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .pledge-text {
+    text-align: center;
+  }
+
+  .offerings-sanctum-card {
+    padding: 2rem 1.15rem;
+  }
+}

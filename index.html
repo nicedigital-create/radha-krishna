@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>श्री राधा कृष्ण • Divine Vrindavan | Anti-Gravity Celestial Darshan</title>
+  <meta name="description" content="Step into the mystical realm of Vrindavan. Experience a magical 3D anti-gravity divine darshan of Shri Radha Krishna with glowing blue-gold lights, floating lotus flowers, peacock feathers, and sacred Vedic shlokas.">
+  
+  <!-- Favicon with Sacred Peacock Feather & Golden Flute Glyph -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23050b1e' stroke='%23ffd700' stroke-width='3'/><path d='M50 15 Q75 35 60 70 Q50 90 50 90 Q50 90 40 70 Q25 35 50 15 Z' fill='%2300b4d8'/><circle cx='50' cy='45' r='14' fill='%237209b7'/><circle cx='50' cy='45' r='7' fill='%23ffd700'/><path d='M20 75 Q50 65 80 75' stroke='%23ffb703' stroke-width='4' stroke-linecap='round'/></svg>">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="celestial-body">
+
+  <!-- =========================================================================
+       PURE CSS INTERACTIVE CONTROLLERS (Darshan Modes, Diya Light & Mobile Nav)
+       ========================================================================= -->
+  <!-- Darshan Mood / Leela Selector Radios -->
+  <input type="radio" name="darshan-mode" id="mode-nitya" class="darshan-radio" checked>
+  <input type="radio" name="darshan-mode" id="mode-jugal" class="darshan-radio">
+  <input type="radio" name="darshan-mode" id="mode-bansuri" class="darshan-radio">
+  <input type="radio" name="darshan-mode" id="mode-temple" class="darshan-radio">
+
+  <!-- Virtual Diya Aarti Glow Toggle -->
+  <input type="checkbox" id="aarti-toggle" class="darshan-checkbox" checked>
+
+  <!-- Mobile Navigation Toggle -->
+  <input type="checkbox" id="nav-toggle" class="darshan-checkbox">
+
+  <!-- Ambient Vrindavan Cosmic Atmosphere (Stars, Moonlight, Floating Fireflies) -->
+  <div class="divine-atmosphere" aria-hidden="true">
+    <div class="celestial-nebula nebula-peacock"></div>
+    <div class="celestial-nebula nebula-gold"></div>
+    <div class="celestial-nebula nebula-lotus"></div>
+    <div class="starfield-twinkle"></div>
+    <div class="sacred-geometry-grid"></div>
+  </div>
+
+  <!-- =========================================================================
+       TRANSPARENT GLASSMORPHIC TEMPLE HEADER
+       ========================================================================= -->
+  <header class="temple-header">
+    <div class="header-container">
+      
+      <!-- Sacred Brand Identity -->
+      <a href="#darshan" class="temple-brand" aria-label="Shri Radha Krishna Divine Home">
+        <span class="om-glyph" aria-hidden="true">ॐ</span>
+        <div class="brand-titles">
+          <span class="brand-main">श्री राधा कृष्ण</span>
+          <span class="brand-sub">DIVINE VRINDAVAN • ZERO-G</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Divine Navigation">
+        <ul class="nav-menu">
+          <li><a href="#darshan" class="nav-link active"><span class="nav-symbol">✦</span> Darshan</a></li>
+          <li><a href="#leela" class="nav-link"><span class="nav-symbol">🪷</span> Vrindavan Leela</a></li>
+          <li><a href="#bansuri" class="nav-link"><span class="nav-symbol">🪈</span> Divine Flute</a></li>
+          <li><a href="#shlokas" class="nav-link"><span class="nav-symbol">📜</span> Sacred Shlokas</a></li>
+          <li><a href="#gallery" class="nav-link"><span class="nav-symbol">🦚</span> Holy Dham</a></li>
+          <li><a href="#ashtakam" class="nav-link"><span class="nav-symbol">✨</span> Ashtakam</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Aarti Switch -->
+      <div class="header-actions">
+        <label for="aarti-toggle" class="btn-aarti-toggle" title="Toggle Golden Diya Aarti Light">
+          <span class="diya-icon">🪔</span>
+          <span class="diya-text">Aarti Glow</span>
+        </label>
+        <a href="#offerings" class="btn-darshan-cta">
+          <span class="cta-shimmer" aria-hidden="true"></span>
+          <span class="cta-text">Offer Flower 🌸</span>
+        </a>
+
+        <!-- Mobile Hamburger Trigger -->
+        <label for="nav-toggle" class="hamburger-trigger" aria-label="Toggle navigation menu">
+          <span class="h-bar bar-top"></span>
+          <span class="h-bar bar-mid"></span>
+          <span class="h-bar bar-bot"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu (Pure CSS) -->
+    <div class="mobile-drawer" aria-label="Mobile Navigation Menu">
+      <div class="drawer-overlay"></div>
+      <div class="drawer-panel">
+        <div class="drawer-top">
+          <div class="drawer-title">
+            <span class="drawer-om">ॐ</span>
+            <span>श्री राधा कृष्ण धाम</span>
+          </div>
+          <label for="nav-toggle" class="drawer-close" aria-label="Close menu">&times;</label>
+        </div>
+
+        <ul class="drawer-links">
+          <li><a href="#darshan" class="drawer-link"><span class="d-icon">✦</span> 3D Floating Darshan</a></li>
+          <li><a href="#leela" class="drawer-link"><span class="d-icon">🪷</span> Sacred Vrindavan Leela</a></li>
+          <li><a href="#bansuri" class="drawer-link"><span class="d-icon">🪈</span> Anti-Gravity Bansuri</a></li>
+          <li><a href="#shlokas" class="drawer-link"><span class="d-icon">📜</span> Bhagavad Gita Shlokas</a></li>
+          <li><a href="#gallery" class="drawer-link"><span class="d-icon">🦚</span> Sacred Dham Gallery</a></li>
+          <li><a href="#ashtakam" class="drawer-link"><span class="d-icon">✨</span> Madhurashtakam & Prayers</a></li>
+          <li><a href="#offerings" class="drawer-link"><span class="d-icon">🌸</span> Virtual Pushpa Seva</a></li>
+        </ul>
+
+        <div class="drawer-bottom">
+          <div class="mahamantra-pill">
+            <span>हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे</span>
+            <span>हरे राम हरे राम राम राम हरे हरे</span>
+          </div>
+          <p class="drawer-blessing">May the grace of Radharani fill your heart with infinite divine bliss.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         SECTION 1: HERO - 3D ANTI-GRAVITY FLOATING RADHA KRISHNA DARSHAN
+         ========================================================================= -->
+    <section id="darshan" class="hero-sanctum">
+      
+      <!-- Top Devotional Title -->
+      <div class="sanctum-header">
+        <div class="sacred-invocation-pill">
+          <span class="invocation-sparkle">✦</span>
+          <span class="invocation-text">॥ नमो भगवते वासुदेवाय • जय श्री राधे ॥</span>
+          <span class="invocation-sparkle">✦</span>
+        </div>
+
+        <h1 class="sanctum-headline">
+          <span class="headline-sanskrit">राधा कृष्ण</span>
+          <span class="headline-english golden-gradient-text">Transcendental Love in Zero Gravity</span>
+        </h1>
+
+        <p class="sanctum-subtext">
+          Behold the supreme eternal lovers of Vrindavan suspended weightlessly in celestial ecstasy. 
+          Where the melodies of the divine bansuri defy all earthly gravity, and lotus flowers bloom upon the starlit sky.
+        </p>
+
+        <!-- Darshan Interactive Mood Selector Bar -->
+        <div class="darshan-selector-bar">
+          <span class="selector-heading">Divine Darshan:</span>
+          <div class="darshan-options">
+            <label for="mode-nitya" class="darshan-btn btn-nitya" title="Full Nitya Leela in Moonlight Vrindavan">
+              <span class="d-btn-icon">🪷</span>
+              <span class="d-btn-text">Nitya Leela</span>
+            </label>
+            <label for="mode-jugal" class="darshan-btn btn-jugal" title="Intimate Celestial Jugalbandi Portrait">
+              <span class="d-btn-icon">👑</span>
+              <span class="d-btn-text">Jugalbandi</span>
+            </label>
+            <label for="mode-bansuri" class="darshan-btn btn-bansuri" title="Anti-Gravity Golden Flute & Peacock Feather">
+              <span class="d-btn-icon">🪈</span>
+              <span class="d-btn-text">Bansuri Leela</span>
+            </label>
+            <label for="mode-temple" class="darshan-btn btn-temple" title="Sacred Yamuna Temple Nocturnal Darshan">
+              <span class="d-btn-icon">🛕</span>
+              <span class="d-btn-text">Vrindavan Dham</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================================================================
+           THE 3D FLOATING SANCTUM SHRINE (ANTI-GRAVITY LEVITATION STAGE)
+           ===================================================================== -->
+      <div class="floating-stage-viewport">
+        
+        <!-- Upward Floating Divine Sparks & Petals -->
+        <div class="divine-particle-field" aria-hidden="true">
+          <div class="spark s-1"></div>
+          <div class="spark s-2"></div>
+          <div class="spark s-3"></div>
+          <div class="spark s-4"></div>
+          <div class="spark s-5"></div>
+          <div class="spark s-6"></div>
+          <div class="spark s-7"></div>
+          <div class="spark s-8"></div>
+          <div class="spark s-9"></div>
+          <div class="spark s-10"></div>
+          <div class="spark s-11"></div>
+          <div class="spark s-12"></div>
+        </div>
+
+        <!-- Levitating Celestial Badges (Left & Right Anchors) -->
+        <aside class="celestial-hud hud-left" aria-label="Divine Virtues">
+          <div class="hud-divine-card glass-card">
+            <div class="hud-top">
+              <span class="hud-lotus">🪷</span>
+              <span class="hud-title">MAHABHAVA</span>
+            </div>
+            <div class="hud-val">Radha Rani</div>
+            <div class="hud-desc">Supreme Embodiment of Divine Compassion & Love</div>
+            <div class="hud-gold-bar"><div class="gold-fill-1"></div></div>
+          </div>
+
+          <div class="hud-divine-card glass-card">
+            <div class="hud-top">
+              <span class="hud-flute">🪈</span>
+              <span class="hud-title">VENU MADHURI</span>
+            </div>
+            <div class="hud-val">Bansuri Nada</div>
+            <div class="hud-desc">Cosmic Vibration Enrapturing All Created Realms</div>
+          </div>
+        </aside>
+
+        <aside class="celestial-hud hud-right" aria-label="Sacred Elements">
+          <div class="hud-divine-card glass-card">
+            <div class="hud-top">
+              <span class="hud-peacock">🦚</span>
+              <span class="hud-title">ANANDA RASA</span>
+            </div>
+            <div class="hud-val">Shyamsundar</div>
+            <div class="hud-desc">All-Attractive Blue-Hued Lord of Infinite Joy</div>
+            <div class="hud-gold-bar"><div class="gold-fill-2"></div></div>
+          </div>
+
+          <div class="hud-divine-card glass-card">
+            <div class="hud-top">
+              <span class="hud-diya">🪔</span>
+              <span class="hud-title">NITYA VRINDAVAN</span>
+            </div>
+            <div class="hud-val">Goloka Dham</div>
+            <div class="hud-desc">Transcendental Realm of Eternal Gravitational Freedom</div>
+          </div>
+        </aside>
+
+        <!-- 3D PERSPECTIVE RIG -->
+        <div class="sanctum-perspective-rig">
+          <!-- The Levitation Shell (Handles smooth anti-gravity vertical bobbing & 3D tilt) -->
+          <div class="sanctum-levitation-shell">
+
+            <!-- ===============================================================
+                 CENTERPIECE: 3D GOLDEN TEMPLE JHAROKHA & DIVINE RADHA KRISHNA
+                 =============================================================== -->
+            <div class="centerpiece-3d-shrine">
+              
+              <!-- Floating Golden Temple Mandir Arch (Jharokha Frame) -->
+              <div class="mandir-golden-frame">
+                
+                <!-- Ornate Temple Dome Shikhara Crest -->
+                <div class="shikhara-crest">
+                  <div class="kalash-pinnacle">
+                    <span class="kalash-glyph">🔱</span>
+                  </div>
+                  <div class="dome-gold-trim"></div>
+                </div>
+
+                <!-- Golden Arch Columns (Pillars with Filigree Engravings) -->
+                <div class="jharokha-pillar pillar-left"></div>
+                <div class="jharokha-pillar pillar-right"></div>
+
+                <!-- Divine Portrait Window with Multi-Leela Layering -->
+                <div class="divine-portrait-viewport">
+                  
+                  <!-- Layer 1: Nitya Vrindavan Leela Scene (Default active) -->
+                  <div class="divine-artwork-layer layer-nitya">
+                    <img src="assets/radha_krishna_hero.jpg" alt="Divine Radha Krishna in Vrindavan Forest under Full Moon" class="darshan-img">
+                    <div class="artwork-divine-glow"></div>
+                  </div>
+
+                  <!-- Layer 2: Jugalbandi Celestial Portrait -->
+                  <div class="divine-artwork-layer layer-jugal">
+                    <img src="assets/radha_krishna_avatar.jpg" alt="Celestial Jugalbandi Portrait of Shri Radha Krishna" class="darshan-img">
+                    <div class="artwork-divine-glow"></div>
+                  </div>
+
+                  <!-- Layer 3: Anti-Gravity Levitating Flute & Peacock Feather -->
+                  <div class="divine-artwork-layer layer-bansuri">
+                    <img src="assets/bansuri_peacock.jpg" alt="Anti-Gravity Floating Bansuri with Glowing Peacock Feather" class="darshan-img">
+                    <div class="artwork-divine-glow"></div>
+                  </div>
+
+                  <!-- Layer 4: Vrindavan Nocturnal Temple on Yamuna River -->
+                  <div class="divine-artwork-layer layer-temple">
+                    <img src="assets/vrindavan_temple.jpg" alt="Sacred Vrindavan Temple on the Banks of River Yamuna" class="darshan-img">
+                    <div class="artwork-divine-glow"></div>
+                  </div>
+
+                  <!-- Holy Glass Specular Reflection & Aura Rings -->
+                  <div class="sacred-glass-sheen"></div>
+                  <div class="divine-halo-radial"></div>
+
+                  <!-- Shimmering Golden Inscription on Shrine Base -->
+                  <div class="shrine-base-plate">
+                    <span class="base-mantra">॥ राधे राधे • जय श्रीकृष्ण ॥</span>
+                  </div>
+                </div>
+
+              </div> <!-- /.mandir-golden-frame -->
+
+              <!-- ===============================================================
+                   FLOATING 3D SATELLITE OBJECTS (Anti-Gravity Floating Lotus, Diyas, Feathers)
+                   =============================================================== -->
+              <!-- Floating Lotus 1 (Bottom Left, in front of frame) -->
+              <div class="floating-lotus-3d lotus-1" aria-hidden="true">
+                <div class="lotus-glow-core"></div>
+                <div class="lotus-petals-cluster">
+                  <span class="petal p1"></span>
+                  <span class="petal p2"></span>
+                  <span class="petal p3"></span>
+                  <span class="petal p4"></span>
+                  <span class="petal p5"></span>
+                  <span class="petal-center">🪷</span>
+                </div>
+              </div>
+
+              <!-- Floating Lotus 2 (Bottom Right, higher altitude) -->
+              <div class="floating-lotus-3d lotus-2" aria-hidden="true">
+                <div class="lotus-glow-core"></div>
+                <div class="lotus-petals-cluster">
+                  <span class="petal p1"></span>
+                  <span class="petal p2"></span>
+                  <span class="petal p3"></span>
+                  <span class="petal-center">🪷</span>
+                </div>
+              </div>
+
+              <!-- Floating Lotus 3 (Top Left, weightlessly ascending) -->
+              <div class="floating-lotus-3d lotus-3" aria-hidden="true">
+                <span class="petal-center">🪷</span>
+              </div>
+
+              <!-- Floating Golden Diya with Flickering Sacred Flame (Left) -->
+              <div class="floating-diya-3d diya-left" aria-hidden="true">
+                <div class="diya-clay-base"></div>
+                <div class="sacred-flame">
+                  <div class="flame-core"></div>
+                  <div class="flame-halo"></div>
+                </div>
+                <div class="diya-light-beam"></div>
+              </div>
+
+              <!-- Floating Golden Diya with Flickering Sacred Flame (Right) -->
+              <div class="floating-diya-3d diya-right" aria-hidden="true">
+                <div class="diya-clay-base"></div>
+                <div class="sacred-flame">
+                  <div class="flame-core"></div>
+                  <div class="flame-halo"></div>
+                </div>
+                <div class="diya-light-beam"></div>
+              </div>
+
+              <!-- Floating Peacock Feather Drift (Weightless Plume) -->
+              <div class="floating-peacock-feather feather-left" aria-hidden="true">
+                <div class="feather-stem"></div>
+                <div class="feather-eye">
+                  <div class="eye-outer-gold"></div>
+                  <div class="eye-mid-cyan"></div>
+                  <div class="eye-core-purple"></div>
+                </div>
+              </div>
+
+            </div> <!-- /.centerpiece-3d-shrine -->
+
+          </div> <!-- /.sanctum-levitation-shell -->
+        </div> <!-- /.sanctum-perspective-rig -->
+
+        <!-- =====================================================================
+             BASE LEVITATION EMITTER: SACRED CONCENTRIC MANDALA & YAMUNA RIPPLES
+             ===================================================================== -->
+        <div class="sacred-base-emitter" aria-hidden="true">
+          <!-- Upward Golden Light Pillar -->
+          <div class="divine-light-pillar"></div>
+
+          <!-- Pulsing Anti-Gravity Sacred Shadow -->
+          <div class="divine-shadow-pool"></div>
+
+          <!-- Concentric Sacred Mandalas (Tilted at 75deg) -->
+          <div class="sacred-mandala mandala-outer">
+            <div class="mandala-ring-dashes"></div>
+          </div>
+          <div class="sacred-mandala mandala-mid">
+            <div class="mandala-om-glyphs">
+              <span class="om-point pt-1">ॐ</span>
+              <span class="om-point pt-2">राधे</span>
+              <span class="om-point pt-3">ॐ</span>
+              <span class="om-point pt-4">कृष्ण</span>
+            </div>
+          </div>
+          <div class="sacred-mandala mandala-inner">
+            <div class="lotus-mandala-petals"></div>
+          </div>
+          <div class="celestial-core-light"></div>
+        </div>
+
+      </div> <!-- /.floating-stage-viewport -->
+
+      <!-- Sacred Glories Metric Strip -->
+      <div class="sacred-virtues-strip">
+        <div class="virtue-card glass-card">
+          <div class="virtue-symbol">🦚</div>
+          <div class="virtue-num">84 <span class="virtue-unit">Kos</span></div>
+          <div class="virtue-title">Vrindavan Parikrama</div>
+          <div class="virtue-desc">Sacred circumambulation of eternal transcendental groves</div>
+        </div>
+
+        <div class="virtue-card glass-card">
+          <div class="virtue-symbol">🪷</div>
+          <div class="virtue-num">16,108</div>
+          <div class="virtue-title">Transcendental Leelas</div>
+          <div class="virtue-desc">Infinite pastimes of selfless spiritual devotion</div>
+        </div>
+
+        <div class="virtue-card glass-card">
+          <div class="virtue-symbol">🪈</div>
+          <div class="virtue-num">7 <span class="virtue-unit">Swaras</span></div>
+          <div class="virtue-title">Divine Venu Nad</div>
+          <div class="virtue-desc">Melodies melting the stone and enchanting all souls</div>
+        </div>
+
+        <div class="virtue-card glass-card">
+          <div class="virtue-symbol">✨</div>
+          <div class="virtue-num">अनंत <span class="virtue-unit">Prema</span></div>
+          <div class="virtue-title">Maha-Bhava</div>
+          <div class="virtue-desc">Supreme unconditioned love that binds the Infinite Lord</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: VRINDAVAN LEELA - THE SACRED DIMENSIONS (BENTO GRID)
+         ========================================================================= -->
+    <section id="leela" class="leela-section">
+      <div class="section-container">
+        
+        <div class="section-title-wrap">
+          <span class="divine-tag">॥ दिव्य लीला रहस्य ॥</span>
+          <h2 class="section-heading">Eternal Dimensions of Vrindavan.</h2>
+          <p class="section-caption">
+            Every step is a dance, every word a song, and every moment bathed in the golden-blue splendor 
+            of Radha and Krishna's eternal pastimes.
+          </p>
+        </div>
+
+        <!-- Sacred Bento Grid -->
+        <div class="leela-bento-grid">
+          
+          <!-- Bento 1: Raas Leela (Wide Card) -->
+          <article class="bento-card bento-wide glass-card">
+            <div class="bento-text">
+              <span class="card-eyebrow">Sharad Purnima • The Full Moon Dance</span>
+              <h3 class="card-title">Maha Raas. The Cosmic Dance of Infinite Devotion.</h3>
+              <p class="card-desc">
+                Under the nectar-filled moonlight of the autumn full moon, Krishna expanded into millions of divine forms, 
+                so each Gopi experienced the Supreme Lord dancing solely beside her. A transcendental communion where earthly 
+                time and gravity ceased to exist.
+              </p>
+              <div class="bento-quote">
+                <em>"एवं शशाङ्कांशुविराजिता निशाः स सत्यकामोऽनुपतारतात्मभिः..."</em>
+                <span class="quote-ref">— Shrimad Bhagavatam (10.33.26)</span>
+              </div>
+            </div>
+            <div class="bento-artwork art-raas">
+              <div class="moon-halo-visual"></div>
+              <div class="circle-of-light">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bento 2: The Divine Bansuri -->
+          <article class="bento-card glass-card">
+            <div class="bento-text">
+              <span class="card-eyebrow">Venu Vadan</span>
+              <h3 class="card-title">The Flute That Stopped the Yamuna</h3>
+              <p class="card-desc">
+                When Shyamsundar places the golden bamboo flute to his coral lips, river Yamuna halts her flow, 
+                deer stand mesmerized in stillness, and celestial beings shower blossoms from the heavens.
+              </p>
+            </div>
+            <div class="bento-visual visual-flute">
+              <div class="mini-bansuri-icon">🪈</div>
+              <div class="sound-wave-rings"></div>
+            </div>
+          </article>
+
+          <!-- Bento 3: Radha Rani's Compassion -->
+          <article class="bento-card glass-card">
+            <div class="bento-text">
+              <span class="card-eyebrow">Karunamayi</span>
+              <h3 class="card-title">Radha: The Soul of Krishna</h3>
+              <p class="card-desc">
+                Without Radharani, Krishna is incomplete. She is the fountainhead of all compassion (Kripamayi). 
+                Chanting her name once evokes the direct protection of the Supreme Divine Couple.
+              </p>
+            </div>
+            <div class="bento-visual visual-radha">
+              <div class="golden-lotus-symbol">🪷</div>
+              <div class="radha-mantra-badge">श्री राधे</div>
+            </div>
+          </article>
+
+          <!-- Bento 4: Sacred Peacock Feather -->
+          <article class="bento-card glass-card">
+            <div class="bento-text">
+              <span class="card-eyebrow">Mor Mukut</span>
+              <h3 class="card-title">The Sovereign Crown of Humility</h3>
+              <p class="card-desc">
+                When the peacocks of Govardhan wept with joy hearing the flute, they offered their finest feathers. 
+                Krishna crowned Himself with their gift, demonstrating that heartfelt love alone rules His heart.
+              </p>
+            </div>
+            <div class="bento-visual visual-peacock">
+              <div class="feather-glow-art">🦚</div>
+            </div>
+          </article>
+
+          <!-- Bento 5: Yamuna River & Kadamba Blossoms (Wide Card) -->
+          <article class="bento-card bento-wide glass-card">
+            <div class="bento-text">
+              <span class="card-eyebrow">Kalindi Tat</span>
+              <h3 class="card-title">Yamuna Maharani & The Kadamba Trees.</h3>
+              <p class="card-desc">
+                Flowing like liquid sapphire through Vrindavan, the holy Yamuna reflects the dark beauty of Krishna. 
+                Along her ghats, hanging Kadamba blossoms perfume the night breeze, carrying the eternal songs of devotion.
+              </p>
+              <div class="ghat-pilgrim-strip">
+                <span class="ghat-pill">✦ Kesi Ghat</span>
+                <span class="ghat-pill">✦ Chir Ghat</span>
+                <span class="ghat-pill">✦ Imli Tala</span>
+                <span class="ghat-pill">✦ Seva Kunj</span>
+              </div>
+            </div>
+            <div class="bento-artwork art-yamuna">
+              <div class="flowing-water-mesh"></div>
+              <div class="drifting-lily-petals"></div>
+            </div>
+          </article>
+
+        </div> <!-- /.leela-bento-grid -->
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: SACRED BANSURI & ANTI-GRAVITY DEVOTION
+         ========================================================================= -->
+    <section id="bansuri" class="bansuri-section">
+      <div class="section-container">
+        
+        <div class="bansuri-feature-card glass-card">
+          <div class="bansuri-feature-visual">
+            <img src="assets/bansuri_peacock.jpg" alt="Anti-gravity levitating golden flute" class="bansuri-feature-img">
+            <div class="bansuri-orbital-glow"></div>
+          </div>
+
+          <div class="bansuri-feature-content">
+            <span class="divine-tag">॥ वेणु गीतम् ॥</span>
+            <h2 class="bansuri-title">The Flute of Infinite Transcendence.</h2>
+            <p class="bansuri-desc">
+              The bansuri represents the pure, hollow reed: when the human soul empties itself of ego and desire, 
+              the Divine breathes through it the sweetest music of unconditional love.
+            </p>
+
+            <div class="bansuri-notes-grid">
+              <div class="note-box">
+                <span class="note-sanskrit">नाद ब्रह्म</span>
+                <span class="note-title">Nada Brahma</span>
+                <span class="note-meaning">Sound as the primordial sacred vibration of the cosmos</span>
+              </div>
+              <div class="note-box">
+                <span class="note-sanskrit">वंशी ध्वनि</span>
+                <span class="note-title">Vamsi Dhwani</span>
+                <span class="note-meaning">Awakening sleeping souls to their eternal home in Goloka</span>
+              </div>
+              <div class="note-box">
+                <span class="note-sanskrit">प्रणव नाद</span>
+                <span class="note-title">Pranava Om</span>
+                <span class="note-meaning">The unbroken stream of divine peace and auspiciousness</span>
+              </div>
+            </div>
+
+            <div class="bansuri-action-row">
+              <a href="#shlokas" class="btn-darshan-cta">Recite Gita Shlokas</a>
+              <span class="bansuri-melody-indicator">
+                <span class="melody-bar"></span>
+                <span class="melody-bar"></span>
+                <span class="melody-bar"></span>
+                <span class="melody-bar"></span>
+                <span class="melody-text">Divine Vibration Resonating</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: SACRED DEVOTIONAL QUOTES & SHLOKAS
+         ========================================================================= -->
+    <section id="shlokas" class="shlokas-section">
+      <div class="section-container">
+
+        <div class="section-title-wrap">
+          <span class="divine-tag">॥ श्रीमद्भगवद्गीता एवं शास्त्र वचनम् ॥</span>
+          <h2 class="section-heading">Eternal Words of the Lord.</h2>
+          <p class="section-caption">
+            Timeless wisdom spoken by Lord Krishna upon the battlefield of Kurukshetra and in the nectar-gardens of Vrindavan.
+          </p>
+        </div>
+
+        <div class="shlokas-grid">
+          
+          <!-- Shloka 1 -->
+          <article class="shloka-card glass-card">
+            <div class="shloka-ornament">ॐ</div>
+            <div class="shloka-sanskrit">
+              "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।<br>
+              मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे॥"
+            </div>
+            <div class="shloka-translation">
+              "Always think of Me, become My devotee, worship Me and offer your homage unto Me. 
+              Thus you will come to Me without fail. I promise you this because you are My very dear friend."
+            </div>
+            <div class="shloka-footer">
+              <span class="shloka-source">Bhagavad Gita • Chapter 18, Verse 65</span>
+              <span class="shloka-heart">💛</span>
+            </div>
+          </article>
+
+          <!-- Shloka 2 -->
+          <article class="shloka-card glass-card featured-shloka">
+            <div class="shloka-badge">SUPREME REFUGE</div>
+            <div class="shloka-ornament">ॐ</div>
+            <div class="shloka-sanskrit">
+              "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।<br>
+              अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः॥"
+            </div>
+            <div class="shloka-translation">
+              "Abandon all varieties of religion and just surrender unto Me alone. 
+              I shall deliver you from all sinful reactions. Do not fear."
+            </div>
+            <div class="shloka-footer">
+              <span class="shloka-source">Bhagavad Gita • Chapter 18, Verse 66</span>
+              <span class="shloka-heart">🪷</span>
+            </div>
+          </article>
+
+          <!-- Shloka 3 -->
+          <article class="shloka-card glass-card">
+            <div class="shloka-ornament">ॐ</div>
+            <div class="shloka-sanskrit">
+              "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।<br>
+              तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः॥"
+            </div>
+            <div class="shloka-translation">
+              "If one offers Me with love and devotion a leaf, a flower, a fruit or water, 
+              I will accept it with transcendental joy."
+            </div>
+            <div class="shloka-footer">
+              <span class="shloka-source">Bhagavad Gita • Chapter 9, Verse 26</span>
+              <span class="shloka-heart">🌸</span>
+            </div>
+          </article>
+
+          <!-- Shloka 4 -->
+          <article class="shloka-card glass-card">
+            <div class="shloka-ornament">ॐ</div>
+            <div class="shloka-sanskrit">
+              "राधा पूर्ण शक्ति, कृष्ण पूर्ण शक्तिमान्।<br>
+              दुई वस्तु भेद नाहि, शास्त्र-परमाण॥"
+            </div>
+            <div class="shloka-translation">
+              "Radha is the complete potency, and Krishna is the possessor of complete potency. 
+              The two are not different, as evidenced in all revealed scriptures."
+            </div>
+            <div class="shloka-footer">
+              <span class="shloka-source">Chaitanya Charitamrita • Adi Leela 4.96</span>
+              <span class="shloka-heart">✨</span>
+            </div>
+          </article>
+
+          <!-- Shloka 5 -->
+          <article class="shloka-card glass-card">
+            <div class="shloka-ornament">ॐ</div>
+            <div class="shloka-sanskrit">
+              "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।<br>
+              तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्॥"
+            </div>
+            <div class="shloka-translation">
+              "To those who are constantly devoted to Me and worship Me with love, 
+              I carry what they lack and preserve what they possess."
+            </div>
+            <div class="shloka-footer">
+              <span class="shloka-source">Bhagavad Gita • Chapter 9, Verse 22</span>
+              <span class="shloka-heart">🛡️</span>
+            </div>
+          </article>
+
+          <!-- Shloka 6 -->
+          <article class="shloka-card glass-card">
+            <div class="shloka-ornament">ॐ</div>
+            <div class="shloka-sanskrit">
+              "कृष्णस्तु भगवान् स्वयम्..."
+            </div>
+            <div class="shloka-translation">
+              "Lord Sri Krishna is the original Personality of Godhead, the source of all celestial avatars, 
+              and the eternal ocean of transcendental sweetness."
+            </div>
+            <div class="shloka-footer">
+              <span class="shloka-source">Shrimad Bhagavatam • 1.3.28</span>
+              <span class="shloka-heart">🦚</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: SACRED VRINDAVAN DHAM GALLERY (3D PERSPECTIVE HOVER)
+         ========================================================================= -->
+    <section id="gallery" class="gallery-section">
+      <div class="section-container">
+
+        <div class="section-title-wrap">
+          <span class="divine-tag">॥ श्री धाम दर्शनम् ॥</span>
+          <h2 class="section-heading">Sacred Pilgrimage of Vrindavan.</h2>
+          <p class="section-caption">
+            Every grain of Vrindavan's holy dust (Braj Raj) is saturated with the divine footprints of Radha and Krishna.
+          </p>
+        </div>
+
+        <div class="gallery-cards-grid">
+          
+          <!-- Gallery 1: Seva Kunj -->
+          <div class="shrine-gallery-card glass-card">
+            <div class="gallery-img-box">
+              <img src="assets/vrindavan_temple.jpg" alt="Vrindavan Sacred Temple on Yamuna River" class="g-img">
+              <div class="gallery-sheen"></div>
+              <span class="gallery-location-badge">Kesi Ghat • Yamuna</span>
+            </div>
+            <div class="gallery-card-info">
+              <h4 class="g-title">Kesi Ghat Yamuna Aarti</h4>
+              <p class="g-desc">Where thousands of floating clay lamps illuminate the holy waters at dusk with Vedic chants.</p>
+            </div>
+          </div>
+
+          <!-- Gallery 2: Nidhi Van -->
+          <div class="shrine-gallery-card glass-card">
+            <div class="gallery-img-box">
+              <img src="assets/radha_krishna_hero.jpg" alt="Radha Krishna in sacred groves" class="g-img">
+              <div class="gallery-sheen"></div>
+              <span class="gallery-location-badge">Nidhi Van • Sacred Groves</span>
+            </div>
+            <div class="gallery-card-info">
+              <h4 class="g-title">Nidhi Van Eternal Leela</h4>
+              <p class="g-desc">Where ancient sacred basil trees intertwine in pairs, bearing witness to midnight divine dances.</p>
+            </div>
+          </div>
+
+          <!-- Gallery 3: Bansuri Vat -->
+          <div class="shrine-gallery-card glass-card">
+            <div class="gallery-img-box">
+              <img src="assets/bansuri_peacock.jpg" alt="Divine Flute in anti-gravity" class="g-img">
+              <div class="gallery-sheen"></div>
+              <span class="gallery-location-badge">Bansivat • Kalpa Vriksha</span>
+            </div>
+            <div class="gallery-card-info">
+              <h4 class="g-title">Vamsivat Ancient Banyan</h4>
+              <p class="g-desc">The sacred wish-fulfilling tree beneath whose boughs Krishna first sounded the call of the flute.</p>
+            </div>
+          </div>
+
+          <!-- Gallery 4: Radha Kund -->
+          <div class="shrine-gallery-card glass-card">
+            <div class="gallery-img-box">
+              <img src="assets/radha_krishna_avatar.jpg" alt="Shri Radha Rani and Krishna divine portrait" class="g-img">
+              <div class="gallery-sheen"></div>
+              <span class="gallery-location-badge">Radha Kund • Govardhan</span>
+            </div>
+            <div class="gallery-card-info">
+              <h4 class="g-title">Radha Kund & Shyam Kund</h4>
+              <p class="g-desc">The most sacred lake in all creation, embodying the supreme liquid love of Srimati Radharani.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: SACRED ASHTAKAM & PRAYERS (PURE CSS ACCORDION)
+         ========================================================================= -->
+    <section id="ashtakam" class="prayers-section">
+      <div class="section-container prayers-container">
+
+        <div class="section-title-wrap">
+          <span class="divine-tag">॥ स्तोत्र एवं प्रार्थना ॥</span>
+          <h2 class="section-heading">Nectar of Devotional Prayers.</h2>
+          <p class="section-caption">
+            Sacred verses composed by great acharyas and saints to invoke the eternal grace of the Divine Couple.
+          </p>
+        </div>
+
+        <div class="prayers-accordion">
+          
+          <!-- Prayer 1: Madhurashtakam -->
+          <details class="prayer-item glass-card" open>
+            <summary class="prayer-summary">
+              <div class="summary-left">
+                <span class="prayer-icon">🪷</span>
+                <span class="prayer-name">मधुराष्टकम् (Madhurashtakam) • By Vallabhacharya</span>
+              </div>
+              <span class="prayer-toggle-glyph">+</span>
+            </summary>
+            <div class="prayer-content">
+              <div class="verse-stanza">
+                <p class="sanskrit-verse">
+                  अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम् ।<br>
+                  हृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥१॥
+                </p>
+                <p class="verse-meaning">
+                  "His lips are sweet, His face is sweet, His eyes are sweet, His smile is sweet, 
+                  His loving heart is sweet, His gait is sweet — everything about the Lord of Sweetness is utterly sweet."
+                </p>
+              </div>
+              <div class="verse-stanza">
+                <p class="sanskrit-verse">
+                  वचनं मधुरं चरितं मधुरं वसनं मधुरं वलितं मधुरम् ।<br>
+                  चलितं मधुरं भ्रमितं मधुरं मधुराधिपतेरखिलं मधुरम् ॥२॥
+                </p>
+                <p class="verse-meaning">
+                  "His words are sweet, His character is sweet, His garments are sweet, His posture is sweet, 
+                  His movements are sweet, His wandering is sweet — all about the Lord of Mathura is completely sweet."
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Prayer 2: Radha Kripa Kataksha Stotram -->
+          <details class="prayer-item glass-card">
+            <summary class="prayer-summary">
+              <div class="summary-left">
+                <span class="prayer-icon">👑</span>
+                <span class="prayer-name">श्री राधा कृपा कटाक्ष स्तोत्रम् (Radha Kripa Kataksha)</span>
+              </div>
+              <span class="prayer-toggle-glyph">+</span>
+            </summary>
+            <div class="prayer-content">
+              <div class="verse-stanza">
+                <p class="sanskrit-verse">
+                  मुनीन्द्रवृन्दवन्दिते त्रिलोकशोकहारिणी प्रसन्‍नवक्त्रपङ्कजे निकुञ्जभूविलासिनी ।<br>
+                  व्रजेन्द्रभानुसूनुभावतोषकल्पकारिणी कदा करिष्यसीह मां कृपाकटाक्षभाजनम् ॥१॥
+                </p>
+                <p class="verse-meaning">
+                  "O Goddess revered by the greatest sages, O dispeller of the three worlds' sorrows, 
+                  whose lotus face glows with delight, who rejoices in the bowers of Vrindavan: 
+                  when, oh when will You bestow upon me a merciful sidelong glance of Your grace?"
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Prayer 3: Hare Krishna Mahamantra -->
+          <details class="prayer-item glass-card">
+            <summary class="prayer-summary">
+              <div class="summary-left">
+                <span class="prayer-icon">✨</span>
+                <span class="prayer-name">महामन्त्र ध्यान (The Great Chanting for Deliverance)</span>
+              </div>
+              <span class="prayer-toggle-glyph">+</span>
+            </summary>
+            <div class="prayer-content">
+              <div class="mahamantra-chant-box">
+                <div class="mantra-line-sanskrit">हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे ।</div>
+                <div class="mantra-line-sanskrit">हरे राम हरे राम राम राम हरे हरे ॥</div>
+                <p class="mantra-insight">
+                  "Hare" addresses the divine feminine energy of Radharani. "Krishna" is the all-attractive Supreme Lord. 
+                  "Rama" is the reservoir of supreme transcendental bliss. This mantra cleanses the mirror of the heart 
+                  and awakens pure unalloyed love of God.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Prayer 4: Damodarashtakam -->
+          <details class="prayer-item glass-card">
+            <summary class="prayer-summary">
+              <div class="summary-left">
+                <span class="prayer-icon">🪔</span>
+                <span class="prayer-name">दामोदराष्टकम् (Shri Damodarashtakam) • By Satyavrata Muni</span>
+              </div>
+              <span class="prayer-toggle-glyph">+</span>
+            </summary>
+            <div class="prayer-content">
+              <div class="verse-stanza">
+                <p class="sanskrit-verse">
+                  नमामीश्वरं सच्चिदानन्दरूपं लसत्कुण्डलं गोकुले भ्राजमानम् ।<br>
+                  यशोदाभियोलूखलाद्धावमानं परामृष्टमत्यन्ततो द्रुत्य गोप्या ॥१॥
+                </p>
+                <p class="verse-meaning">
+                  "To the supreme Lord whose form is eternal being, consciousness and bliss, 
+                  whose earrings sway, who shines resplendently in Gokula — unto that Lord Damodara I bow down with devotion."
+                </p>
+              </div>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: VIRTUAL PUSHPA SEVA & DEVOTIONAL OFFERINGS
+         ========================================================================= -->
+    <section id="offerings" class="offerings-section">
+      <div class="section-container">
+
+        <div class="offerings-sanctum-card glass-card">
+          <div class="offerings-aura" aria-hidden="true"></div>
+
+          <div class="offerings-inner">
+            <span class="divine-tag">॥ मानस पूजा • Manasa Puja ॥</span>
+            <h2 class="offerings-title">Offer Your Love to the Divine Couple.</h2>
+            <p class="offerings-subtitle">
+              In Vedic devotion, flowers offered in the mind (Manasa Seva) carry pure spiritual power. 
+              Choose your sacred offering below and immerse your consciousness in the presence of Shri Radha Krishna.
+            </p>
+
+            <div class="offering-interactive-grid">
+              <!-- Item 1: Blue Lotus -->
+              <div class="offering-item glass-card">
+                <span class="item-emoji">🪷</span>
+                <h4 class="item-name">Neel Kamal</h4>
+                <p class="item-desc">Rare blue lotus beloved of Lord Shyamsundar</p>
+                <span class="item-badge">Offered with Love</span>
+              </div>
+
+              <!-- Item 2: Golden Diya -->
+              <div class="offering-item glass-card active-offering">
+                <span class="item-emoji">🪔</span>
+                <h4 class="item-name">Ghee Deepam</h4>
+                <p class="item-desc">Dispelling spiritual darkness with eternal light</p>
+                <span class="item-badge gold-badge">Aarti Active</span>
+              </div>
+
+              <!-- Item 3: Sweet Tulsi Leaves -->
+              <div class="offering-item glass-card">
+                <span class="item-emoji">🌿</span>
+                <h4 class="item-name">Tulsi Manjari</h4>
+                <p class="item-desc">Holy basil leaves resting at the lotus feet</p>
+                <span class="item-badge">Ever-Sacred</span>
+              </div>
+
+              <!-- Item 4: Makhan Mishri -->
+              <div class="offering-item glass-card">
+                <span class="item-emoji">🍯</span>
+                <h4 class="item-name">Makhan Mishri</h4>
+                <p class="item-desc">Fresh sweet butter churned with heartfelt devotion</p>
+                <span class="item-badge">Sweet Nectar</span>
+              </div>
+            </div>
+
+            <!-- Devotional Chant Card -->
+            <div class="sacred-pledge-card">
+              <div class="pledge-om">ॐ</div>
+              <div class="pledge-text">
+                <em>"हे कृष्ण करुणा सिन्धो दीन बन्धो जगत्पते । गोपेश गोपिकाकान्त राधाकान्त नमोऽस्तु ते ॥"</em>
+                <p class="pledge-sub">O Krishna, ocean of mercy, friend of the fallen, Lord of the universe, beloved of the gopis and master of Radha, I offer my humble obeisances unto You.</p>
+              </div>
+            </div>
+
+            <div class="offerings-cta-wrap">
+              <a href="#darshan" class="btn-darshan-cta btn-lg">
+                <span>Return to Floating Darshan</span>
+                <span class="btn-arrow">↑</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       MAGNIFICENT VEDIC TEMPLE FOOTER
+       ========================================================================= -->
+  <footer class="temple-footer">
+    
+    <!-- Holy Marquee Banner with Radha-Krishna Calligraphy -->
+    <div class="sacred-marquee-strip" aria-hidden="true">
+      <div class="marquee-content">
+        <span>॥ राधे राधे • राधे राधे • राधे राधे ॥</span>
+        <span>हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे • हरे राम हरे राम राम राम हरे हरे</span>
+        <span>॥ जय श्री राधे • जय श्री कृष्णा • जय वृन्दावन धाम ॥</span>
+        <span>॥ राधे राधे • राधे राधे • राधे राधे ॥</span>
+        <span>हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे • हरे राम हरे राम राम राम हरे हरे</span>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      
+      <!-- Footer Top Sacred Columns -->
+      <div class="footer-columns">
+        <!-- Col 1: About Sanctum -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <span class="f-om">ॐ</span>
+            <span class="f-name">श्री राधा कृष्ण धाम</span>
+          </div>
+          <p class="f-desc">
+            An ethereal sanctuary dedicated to the eternal pastimes, divine philosophy, 
+            and unalloyed transcendental love of Shri Radha Rani and Lord Krishna in sacred Vrindavan.
+          </p>
+          <div class="f-social-symbols">
+            <span class="f-sym" title="Om">ॐ</span>
+            <span class="f-sym" title="Lotus">🪷</span>
+            <span class="f-sym" title="Flute">🪈</span>
+            <span class="f-sym" title="Peacock">🦚</span>
+          </div>
+        </div>
+
+        <!-- Col 2: The Sacred Groves -->
+        <div class="footer-col">
+          <h4 class="col-heading">Vrindavan Holy Vana</h4>
+          <ul class="col-list">
+            <li><a href="#darshan">Nidhi Van (Sacred Groves)</a></li>
+            <li><a href="#leela">Seva Kunj (Bower of Love)</a></li>
+            <li><a href="#bansuri">Vamsivat (Flute Banyan)</a></li>
+            <li><a href="#gallery">Radha Kund (Lake of Prema)</a></li>
+            <li><a href="#gallery">Govardhan (Hill of Grace)</a></li>
+            <li><a href="#gallery">Barsana (Palace of Radha)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Divine Leelas & Wisdom -->
+        <div class="footer-col">
+          <h4 class="col-heading">Eternal Wisdom</h4>
+          <ul class="col-list">
+            <li><a href="#shlokas">Bhagavad Gita As It Is</a></li>
+            <li><a href="#shlokas">Shrimad Bhagavatam (Canto 10)</a></li>
+            <li><a href="#ashtakam">Chaitanya Charitamrita</a></li>
+            <li><a href="#ashtakam">Gopal Sahasranama</a></li>
+            <li><a href="#ashtakam">Radha Sahasranama</a></li>
+            <li><a href="#ashtakam">Brahma Samhita (Govindam)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Daily Temple Seva -->
+        <div class="footer-col">
+          <h4 class="col-heading">Ashtayama Seva Timings</h4>
+          <ul class="col-list timings-list">
+            <li><span>Mangala Aarti:</span> <strong>04:30 AM</strong></li>
+            <li><span>Shringar Darshan:</span> <strong>07:15 AM</strong></li>
+            <li><span>Rajbhog Aarti:</span> <strong>12:00 PM</strong></li>
+            <li><span>Utthapan Darshan:</span> <strong>04:30 PM</strong></li>
+            <li><span>Sandhya Aarti:</span> <strong>06:30 PM</strong></li>
+            <li><span>Shayan Darshan:</span> <strong>08:30 PM</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-gold-divider"></div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          ॥ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः ॥ May all living beings in all universes be peaceful, joyful, and liberated.
+        </div>
+        <div class="footer-dedication">
+          Dedicated with pure devotion at the lotus feet of <strong>श्री राधा कृष्ण</strong>.
+        </div>
+        <div class="footer-pilgrim-loc">
+          <span class="loc-pin">📍</span> Vrindavan Dham, Mathura, Uttar Pradesh, Bharat
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
